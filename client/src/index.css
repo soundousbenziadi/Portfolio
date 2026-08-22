@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+  --color-background: #f7fafc;
+  --color-foreground: #071a2b;
+  --color-primary: #0078a8;
+  --color-secondary: #d99000;
+  --color-accent: #e65300;
+  --animate-fade-in-scale: fade-in-scale 0.3s ease-in-out;
+}
+
+@layer base {
+  .dark {
+    --color-background: #06111f;
+    --color-foreground: #f4f7fa;
+    --color-primary: #009edb;
+    --color-secondary: #feb100;
+    --color-accent: #ff6300;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
