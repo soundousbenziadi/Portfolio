@@ -7,7 +7,9 @@
   --color-primary: #0078a8;
   --color-secondary: #d99000;
   --color-accent: #e65300;
-  --animate-fade-in-scale: fade-in-scale 0.3s ease-in-out;
+
+  --font-heading: "Sora", "Cairo", sans-serif;
+  --font-body: "Inter", "Tajawal", sans-serif;
 }
 
 @layer base {
@@ -21,5 +23,8 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+  :lang(ar) {
+    line-height: 1.8;
   }
 }

@@ -6,9 +6,16 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SoundousBND</title>
+  <script>
+    (function () {
+      const saved = localStorage.getItem("theme");
+      const isDark = saved ? saved === "dark" : true;
+      if (isDark) document.documentElement.classList.add("dark");
+    })();
+  </script>
 </head>
 
-<body class="dark">
+<body>
   <div id="root"></div>
   <script type="module" src="/src/main.tsx"></script>
 </body>

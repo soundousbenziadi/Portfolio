@@ -1,7 +1,15 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import SplashScreen from "./pages/SplashScreen";
 function App() {
   return (
     <>
-      <h1>hello world</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<SplashScreen />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
