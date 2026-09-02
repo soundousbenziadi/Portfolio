@@ -1,9 +1,10 @@
-import ThemeToggle from "../components/ThemeToggle";
+import LanguageToggle from "../components/layout/LanguageToggle";
+import ThemeToggle from "../components/layout/ThemeToggle";
+import Navbar from "../components/layout/Navbar";
 export default function Home() {
   return (
     <>
-      <h1>hello world</h1>
-      <ThemeToggle />
+      <Navbar />
     </>
   );
 }

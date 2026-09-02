@@ -1,0 +1,12 @@
+{
+  "hero.title": "Explore with us",
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "experiences": "Experiences",
+    "contact": "Contact Me",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "logoAlt": "Logo"
+  }
+}
