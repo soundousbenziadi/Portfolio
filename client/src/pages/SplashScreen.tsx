@@ -93,6 +93,7 @@ export default function SplashScreen() {
 
           <motion.h1
             variants={containerVariants}
+            dir="ltr"
             initial="hidden"
             animate="visible"
             aria-label={FULL_TEXT}

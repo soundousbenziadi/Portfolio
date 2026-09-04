@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600&family=Sora:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cairo:wght@200..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Readex+Pro:wght@160..700&family=Sora:wght@100..800&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 @import "tailwindcss";
-
 @custom-variant dark (&:where(.dark, .dark *));
 @theme {
   --color-background: #f7fafc;
   --color-foreground: #071a2b;
-  --color-primary: #0078a8;
-  --color-secondary: #d99000;
+  /* --color-primary: #0078a8; */
+  /* --color-secondary: #d99000;*/
+  --color-primary: #0c8ec1;
+  --color-secondary: #eda909;
   --color-accent: #e65300;
 
-  --font-heading: "Sora", "Cairo", sans-serif;
-  --font-body: "Inter", "Tajawal", sans-serif;
+  --font-heading: "Sora", "Readex Pro", sans-serif;
+  --font-body: "Inter", "Cairo", sans-serif;
 }
 
 @layer base {

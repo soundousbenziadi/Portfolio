@@ -1,5 +1,12 @@
 {
-  "hero.title": "Explore with us",
+  "hero": {
+    "greeting": "Welcome to my portfolio, I'm",
+    "name": "Soundous",
+    "title": "Front-End Developer & UI/UX Designer",
+    "description": "I turn your ideas into experiences",
+    "contactButton": "Contact Me",
+    "articlesButton": "Read my articles"
+  },
   "nav": {
     "home": "Home",
     "projects": "Projects",

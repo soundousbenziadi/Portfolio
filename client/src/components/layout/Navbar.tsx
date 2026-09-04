@@ -18,15 +18,15 @@ export default function Navbar() {
   const { t } = useTranslation();
 
   return (
-    <header className="sticky top-0 z-50 border-b md:border-none border-foreground/10 bg-background/80 backdrop-blur-md">
+    <header className="fixed w-dvw top-0 z-50 border-b md:border-none border-foreground/10 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
         {/* Logo */}
         <a href="#home" className="flex shrink-0 items-center gap-2">
-          <img src={logo} alt={t("nav.logoAlt")} className="h-8 w-auto" />
+          <img src={logo} alt={t("nav.logoAlt")} className="h-10 w-auto" />
         </a>
 
         {/* Desktop nav links */}
-        <nav className="hidden items-center gap-8 md:flex border border-foreground/10 bg-foreground/5 py-3 px-4 rounded-tl-2xl rounded-br-2xl">
+        <nav className="hidden items-center gap-8 md:flex border border-foreground/10 bg-foreground/5 py-2.5 px-4 rounded-tl-2xl rounded-br-2xl">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
