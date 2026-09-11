@@ -3,9 +3,11 @@
     "greeting": "مرحبا بكم في موقع اعمالي، أنا",
     "name": "سندس",
     "title": "مطورة واجهات أمامية ومصممة UI/UX",
-    "description": "أحوّل أفكارك إلى تجارب",
+    "description": " طالبة ماستر في علوم الحاسوب",
+    "basedIn": "الجزائر - سطيف",
     "contactButton": "تواصل معي",
-    "articlesButton": "اقرأ مقالاتي"
+    "articlesButton": "اقرأ مقالاتي",
+    "articlesToast": "ستكون المقالات متاحة قريبا"
   },
   "nav": {
     "home": "الرئيسية",

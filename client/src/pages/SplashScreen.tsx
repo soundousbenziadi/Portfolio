@@ -9,7 +9,7 @@ const STAGGER = 0.035;
 const START_DELAY = 0.3;
 const LETTER_DURATION = 0.35;
 
-const FULL_TEXT = "Hi, I'm Soundous UI/UX Designer & Web Developer";
+const FULL_TEXT = "Hi, I'm Soundous UI/UX Designer & FrontEnd Developer";
 const TYPING_DURATION = (FULL_TEXT.length - 1) * STAGGER + LETTER_DURATION;
 
 const letterVariants: Variants = {
@@ -111,7 +111,7 @@ export default function SplashScreen() {
               <Letters text=" Designer & " />
               <br className="block sm:hidden" />
               <span className="text-secondary">
-                <Letters text="Web Developer" />
+                <Letters text="Frontend Developer" />
               </span>
             </span>
 

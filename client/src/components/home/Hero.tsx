@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import heroBackground from "../../assets/heroImg.png";
+import { toast } from "react-toastify";
+import { MapPin } from "lucide-react";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
@@ -70,6 +72,15 @@ export default function Hero() {
         >
           {t("hero.description")}
         </motion.p>
+        <motion.p
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, ease: EASE, delay: 0.46 }}
+          className="text-lg sm:text-xl md:text-2xl text-foreground/70"
+        >
+          <MapPin className="inline-block h-6 w-6 mx-2" />
+          {t("hero.basedIn")}
+        </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -82,6 +93,9 @@ export default function Hero() {
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             className="bg-primary px-6 py-2 text-[#f4f7fa] hover:bg-primary/90 cursor-pointer focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 inline-flex items-center justify-center rounded-br-md rounded-tl-md text-md font-bold transition-colors focus-visible:outline-none "
+            onClick={() => {
+              toast.info(t("hero.articlesToast"));
+            }}
           >
             {t("hero.articlesButton")}
           </motion.button>

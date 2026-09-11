@@ -3,9 +3,11 @@
     "greeting": "Welcome to my portfolio, I'm",
     "name": "Soundous",
     "title": "Front-End Developer & UI/UX Designer",
-    "description": "I turn your ideas into experiences",
+    "description": "Master Student in Computer Science",
+    "basedIn": "Algeria - Setif",
     "contactButton": "Contact Me",
-    "articlesButton": "Read my articles"
+    "articlesButton": "Read my articles",
+    "articlesToast": "Articles will be available soon."
   },
   "nav": {
     "home": "Home",
