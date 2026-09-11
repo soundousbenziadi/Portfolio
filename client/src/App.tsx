@@ -3,7 +3,9 @@ import Home from "./pages/Home";
 import SplashScreen from "./pages/SplashScreen";
 import MainLayout from "./components/layout/MainLayout";
 import { ToastContainer } from "react-toastify";
+import { useTranslation } from "react-i18next";
 function App() {
+  const { i18n } = useTranslation();
   return (
     <>
       <BrowserRouter>
@@ -14,7 +16,11 @@ function App() {
               <Route path="/home" element={<Home />} />
             </Route>
           </Routes>
-          <ToastContainer position="top-right" autoClose={3000} />
+          <ToastContainer
+            position={i18n.language === "ar" ? "top-left" : "top-right"}
+            autoClose={3000}
+            rtl={i18n.language === "ar"}
+          />
         </div>
       </BrowserRouter>
     </>

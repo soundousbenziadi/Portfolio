@@ -29,7 +29,7 @@ export default function Hero() {
           ease: EASE,
           delay: 0.3,
         }}
-        className="absolute left-6 bottom-20 md:bottom-15 
+        className="absolute left-6 bottom-10 md:bottom-15 
   "
       >
         <motion.div
@@ -47,12 +47,12 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      <div className="z-10 flex flex-col items-center justify-center gap-10 md:gap-6 text-center">
+      <div className="z-10 flex flex-col items-center justify-center gap-10 md:gap-6 text-center px-4">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: EASE, delay: 0.1 }}
-          className="font-heading text-2xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl"
+          className="font-heading text-xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl"
         >
           {t("hero.greeting")}
         </motion.h2>
@@ -76,9 +76,9 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: EASE, delay: 0.46 }}
-          className="text-lg sm:text-xl md:text-2xl text-foreground/70"
+          className="flex items-center text-lg sm:text-xl md:text-2xl text-foreground/70"
         >
-          <MapPin className="inline-block h-6 w-6 mx-2" />
+          <MapPin className="h-6 w-6 mx-2 shrink-0" />
           {t("hero.basedIn")}
         </motion.p>
 
