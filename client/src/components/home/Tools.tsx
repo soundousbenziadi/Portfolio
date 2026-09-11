@@ -1,5 +1,3 @@
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
 import {
   SiHtml5,
   SiCss,
@@ -13,8 +11,6 @@ import {
   SiN8N,
   SiMongodb,
 } from "react-icons/si";
-
-const EASE = [0.16, 1, 0.3, 1] as const;
 
 const tools = [
   { name: "HTML", Icon: SiHtml5, color: "E34F26" },
@@ -34,8 +30,6 @@ const tools = [
 const loopTools = [...tools, ...tools];
 
 export default function Tools() {
-  const { t } = useTranslation();
-
   return (
     <section id="tools" className="relative w-full overflow-hidden">
       {/* <motion.div
