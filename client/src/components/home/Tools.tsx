@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import {
   SiHtml5,
   SiCss,
@@ -30,23 +32,20 @@ const tools = [
 const loopTools = [...tools, ...tools];
 
 export default function Tools() {
+  const { t } = useTranslation();
   return (
     <section id="tools" className="relative w-full overflow-hidden">
-      {/* <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.7, ease: EASE }}
-        className="mb-12 flex flex-col items-center gap-3 text-center px-6"
-      >
-        <h2 className="font-heading text-2xl font-semibold sm:text-3xl md:text-4xl">
-          {t("tools.title")}
-        </h2>
-        <p className="max-w-xl font-body text-foreground/70">
-          {t("tools.subtitle")}
-        </p>
-      </motion.div> */}
       <div className="mb-10 h-1 w-full bg-secondary "></div>
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, delay: 0.1 }}
+        className="absolute z-20 right-6 bottom-6 md:bottom-15 flex items-center rounded-lg border border-foreground/10 bg-accent/85 px-5 py-2 backdrop-blur-md opacity-90"
+      >
+        <span className="font-body text-md text-foreground">
+          {t("tools.title")}
+        </span>
+      </motion.div>
       <div
         className="tools-marquee relative w-full mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
         style={{ direction: "ltr" }}

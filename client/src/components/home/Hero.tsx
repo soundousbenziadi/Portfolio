@@ -47,7 +47,7 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      <div className="z-10 flex flex-col items-center justify-center gap-10 md:gap-6 text-center px-4">
+      <div className="z-10 flex flex-col items-center justify-center gap-8 md:gap-6 text-center px-4">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export default function Hero() {
           transition={{ duration: 0.7, ease: EASE, delay: 0.46 }}
           className="flex items-center text-lg sm:text-xl md:text-2xl text-foreground/70"
         >
-          <MapPin className="h-6 w-6 mx-2 shrink-0" />
+          <MapPin className="h-5 w-5 mx-2 shrink-0" />
           {t("hero.basedIn")}
         </motion.p>
 

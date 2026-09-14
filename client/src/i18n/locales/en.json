@@ -17,5 +17,26 @@
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
     "logoAlt": "Logo"
+  },
+  "tools": {
+    "title": "Tools I use"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "A selection of things I've built, from design work to full-stack platforms.",
+    "toolsUsed": "Tools Used",
+    "viewMore": "View More",
+    "notFound": "This project couldn't be found.",
+    "backHome": "Back to Home",
+    "repoLink": "View Repo",
+    "liveLink": "Live Demo",
+    "behanceLink": "View on Behance"
+  },
+  "projectTypes": {
+    "fullstack": "Full Stack",
+    "frontend": "Frontend",
+    "uiux": "UI/UX",
+    "automation": "Automation",
+    "graphicDesign": "Graphic Design"
   }
 }

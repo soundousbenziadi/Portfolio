@@ -7,7 +7,7 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageToggle from "./LanguageToggle";
 
 const NAV_LINKS = [
-  { href: "#home", key: "nav.home" },
+  { href: "/home", key: "nav.home" },
   { href: "#projects", key: "nav.projects" },
   { href: "#experiences", key: "nav.experiences" },
   { href: "#contact", key: "nav.contact" },
