@@ -56,7 +56,7 @@ export default function ProjectPage() {
           className="absolute top-4 inset-s-4 inline-flex items-center gap-2 rounded-full
                bg-background/80 backdrop-blur-sm border border-foreground/10
                px-4 py-2 font-body text-sm font-medium text-foreground/80
-               transition-colors hover:text-primary hover:bg-background/95"
+               transition-colors hover:text-accent hover:bg-background/95"
         >
           <ArrowLeft size={16} className="rtl:rotate-180" />
           {t("projects.backHome")}

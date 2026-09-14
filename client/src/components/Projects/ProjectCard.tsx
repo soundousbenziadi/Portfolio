@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             {project.types.map((type) => (
               <span
                 key={type}
-                className="rounded-full border border-foreground/10 bg-accent/80 px-3 py-1 font-body text-xs font-medium text-foreground backdrop-blur-md"
+                className="rounded-full border border-foreground/10 bg-accent/80 px-3 py-1 font-body text-xs font-medium text-white/90 backdrop-blur-md"
               >
                 {t(`projectTypes.${type}`)}
               </span>
