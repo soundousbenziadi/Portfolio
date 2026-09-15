@@ -34,8 +34,8 @@ export const projectsMock: Project[] = [
       ar: "TendIn",
     },
     description: {
-      en: "A MERN-based event management and discovery platform connecting event organizers with users. It provides event browsing and filtering, registration, organization, user, and admin dashboards, along with an AI-powered chatbot built with n8n to help users discover and explore events.",
-      ar: "منصة لإدارة واكتشاف الفعاليات مبنية باستخدام MERN، تربط بين منظمي الفعاليات والمستخدمين. توفر تصفح الفعاليات وتصفيتها والتسجيل فيها، إلى جانب لوحات تحكم للمستخدمين والمنظمات والإدارة، بالإضافة إلى روبوت محادثة مدعوم بالذكاء الاصطناعي تم تطويره باستخدام n8n لمساعدة المستخدمين على اكتشاف واستكشاف الفعاليات.",
+      en: "A MERN-based event management and discovery platform connecting event organizers with users. It provides event browsing and filtering, registration, organization, user, and admin dashboards, along with an AI-powered chatbot built with n8n to help users discover and explore events. The project is currently in development and not yet fully completed; the available demo link showcases the current progress.",
+      ar: "منصة لإدارة واكتشاف الفعاليات مبنية باستخدام MERN، تربط بين منظمي الفعاليات والمستخدمين. توفر تصفح الفعاليات وتصفيتها والتسجيل فيها، إلى جانب لوحات تحكم للمستخدمين والمنظمات والإدارة، بالإضافة إلى روبوت محادثة مدعوم بالذكاء الاصطناعي تم تطويره باستخدام n8n لمساعدة المستخدمين على اكتشاف واستكشاف الفعاليات. المشروع لا يزال قيد التطوير ولم يكتمل بشكل نهائي بعد، والرابط المتاح يعرض فيديو توضيحيًا للتقدم الحالي في المشروع.",
     },
     tools: [
       "react",
@@ -50,8 +50,7 @@ export const projectsMock: Project[] = [
       "n8n",
     ],
     links: {
-      repo: "https://github.com/yourusername/tendin",
-      live: "https://example.com",
+      live: "YOUR_DEMO_VIDEO_URL",
     },
   },
   {

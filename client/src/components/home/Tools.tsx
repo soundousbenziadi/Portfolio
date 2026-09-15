@@ -42,9 +42,7 @@ export default function Tools() {
         transition={{ duration: 0.7, delay: 0.1 }}
         className="absolute z-20 right-6 bottom-6 md:bottom-15 flex items-center rounded-lg border border-foreground/10 bg-accent/85 px-5 py-2 backdrop-blur-md opacity-90"
       >
-        <span className="font-body text-md text-foreground">
-          {t("tools.title")}
-        </span>
+        <span className=" text-md text-foreground">{t("tools.title")}</span>
       </motion.div>
       <div
         className="tools-marquee relative w-full mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
@@ -59,7 +57,7 @@ export default function Tools() {
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-background p-3 shadow-sm">
                 <tool.Icon className="h-full w-full object-contain text-foreground" />
               </div>
-              <span className="font-body text-sm font-medium text-foreground/70">
+              <span className=" text-sm font-medium text-foreground/70">
                 {tool.name}
               </span>
             </div>

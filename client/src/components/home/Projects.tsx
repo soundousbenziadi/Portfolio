@@ -10,17 +10,11 @@ export default function Projects() {
 
   return (
     <section id="projects" className="w-full px-6 py-10 md:py-20">
-      <motion.div
-        initial={{ opacity: 0, y: 24 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 0.7, ease: EASE }}
-        className="mx-auto mb-14 flex max-w-2xl flex-col items-center gap-3 text-center"
-      >
+      <motion.div className="mx-auto mb-14 flex max-w-2xl flex-col items-center gap-3 text-center">
         <h2 className="font-heading text-2xl font-semibold sm:text-3xl md:text-4xl">
           {t("projects.title")}
         </h2>
-        <p className="font-body text-foreground/70">{t("projects.subtitle")}</p>
+        <p className=" text-foreground/70">{t("projects.subtitle")}</p>
       </motion.div>
 
       <div className="mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">

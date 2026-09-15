@@ -18,7 +18,7 @@ export default function ProjectPage() {
   if (!project) {
     return (
       <section className="flex min-h-dvh flex-col items-center justify-center gap-4 px-6 text-center">
-        <p className="font-body text-foreground/70">{t("projects.notFound")}</p>
+        <p className=" text-foreground/70">{t("projects.notFound")}</p>
         <Link
           to="/home"
           className="font-body font-bold text-primary hover:underline"
@@ -73,7 +73,7 @@ export default function ProjectPage() {
           {project.types.map((type) => (
             <span
               key={type}
-              className="rounded-full border border-foreground/10 bg-foreground/5 px-3 py-1 font-body text-xs font-medium text-foreground/80"
+              className="rounded-full border border-foreground/10 bg-foreground/5 px-3 py-1 text-xs font-medium text-foreground/80"
             >
               {t(`projectTypes.${type}`)}
             </span>

@@ -23,10 +23,27 @@
     --color-accent: #ff6300;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground;
   }
   :lang(ar) {
     line-height: 1.8;
+  }
+  p,
+  span,
+  li,
+  a,
+  button,
+  input,
+  textarea {
+    @apply font-body;
+  }
+  h1,
+  h2 {
+    @apply font-heading;
   }
 }

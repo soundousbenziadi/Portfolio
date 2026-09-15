@@ -13,7 +13,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       <motion.div
         whileHover={{ y: -6 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        className="flex h-full flex-col overflow-hidden rounded-md border border-foreground/10 bg-foreground/5 backdrop-blur-md"
+        className="flex h-full flex-col overflow-hidden rounded-md border border-foreground/10 bg-foreground/5"
       >
         <div className="relative aspect-video w-full overflow-hidden">
           <img
@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             {project.types.map((type) => (
               <span
                 key={type}
-                className="rounded-full border border-foreground/10 bg-accent/80 px-3 py-1 font-body text-xs font-medium text-white/90 backdrop-blur-md"
+                className="rounded-full border border-foreground/10 bg-accent/80 px-3 py-1  text-xs font-medium text-white/90"
               >
                 {t(`projectTypes.${type}`)}
               </span>
@@ -38,13 +38,13 @@ export default function ProjectCard({ project }: { project: Project }) {
           <h3 className="font-heading text-lg font-semibold sm:text-xl">
             {project.title[lang]}
           </h3>
-          <p className="flex-1 font-body text-sm text-foreground/70">
+          <p className="flex-1 text-sm text-foreground/70">
             {truncateText(project.description[lang], 110)}
           </p>
 
           <Link
             to={`/projects/${project.id}`}
-            className=" mt-2  w-full text-center text-md text-foreground font-body transition-colors bg-primary/90 hover:bg-primary/80   rounded-2xl border border-foreground/10 py-1 "
+            className=" mt-2  w-full text-center text-md text-foreground transition-colors bg-primary/90 hover:bg-primary/80   rounded-2xl border border-foreground/10 py-1 "
           >
             {t("projects.viewMore")}
           </Link>

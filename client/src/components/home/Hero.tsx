@@ -41,9 +41,7 @@ export default function Hero() {
           }}
           className="flex items-center gap-3  rounded-tl-2xl rounded-br-2xl border border-foreground/10 bg-foreground/5 px-5 py-3 backdrop-blur-md"
         >
-          <span className="font-body text-sm text-foreground/70">
-            {t("hero.title")}
-          </span>
+          <span className=" text-sm text-foreground/70">{t("hero.title")}</span>
         </motion.div>
       </motion.div>
 
