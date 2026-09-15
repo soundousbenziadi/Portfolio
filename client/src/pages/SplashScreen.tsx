@@ -105,12 +105,12 @@ export default function SplashScreen() {
                 <Letters text="Soundous " />
               </span>
               <br />
-              <span className="text-accent">
+              <span className="text-secondary">
                 <Letters text="UI/UX" />
               </span>
               <Letters text=" Designer & " />
               <br className="block sm:hidden" />
-              <span className="text-secondary">
+              <span className="text-accent">
                 <Letters text="Frontend Developer" />
               </span>
             </span>

@@ -77,7 +77,7 @@ export default function Tools() {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="absolute z-20 right-6 bottom-6 md:bottom-15 flex items-center rounded-lg border border-foreground/10 bg-accent/85 px-5 py-2 opacity-90"
+        className="absolute z-20 right-6 bottom-6 md:bottom-15 flex items-center rounded-sm border border-foreground/10 bg-accent/80 px-5 py-2 opacity-90"
       >
         <span className=" text-md text-foreground">{t("tools.title")}</span>
       </motion.div>
