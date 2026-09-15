@@ -110,7 +110,7 @@ export default function Tools() {
           {loopTools.map((tool, i) => (
             <div
               key={`${tool.name}-${i}`}
-              className="mx-3 flex shrink-0 flex-col items-center gap-3 rounded-tl-2xl rounded-br-2xl border border-foreground/10 bg-foreground/5 px-8 py-6 backdrop-blur-md"
+              className="mx-3 flex shrink-0 flex-col items-center gap-3 rounded-tl-2xl rounded-br-2xl border border-foreground/10 bg-foreground/5 px-8 py-6"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-background p-3 shadow-sm">
                 <tool.Icon className="h-full w-full object-contain text-foreground" />
