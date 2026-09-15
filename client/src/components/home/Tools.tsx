@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { useRef } from "react";
+import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import {
   SiHtml5,
@@ -31,8 +32,44 @@ const tools = [
 // duplicated once so the track can loop seamlessly at -50%
 const loopTools = [...tools, ...tools];
 
+const LOOP_DURATION_SECONDS = 28; // same pace as the old 28s CSS animation
+
 export default function Tools() {
   const { t } = useTranslation();
+  const trackRef = useRef<HTMLDivElement>(null);
+  const x = useMotionValue(0);
+  const isDragging = useRef(false);
+  const isHovering = useRef(false);
+
+  // Auto-scroll loop, paused while dragging or hovering
+  useAnimationFrame((_, delta) => {
+    if (isDragging.current || isHovering.current) return;
+    const track = trackRef.current;
+    if (!track) return;
+
+    const singleSetWidth = track.scrollWidth / 2;
+    if (singleSetWidth <= 0) return;
+
+    const speed = singleSetWidth / LOOP_DURATION_SECONDS; // px per second
+    let next = x.get() - (delta / 1000) * speed;
+
+    // wrap seamlessly once a full set has scrolled past
+    if (next <= -singleSetWidth) next += singleSetWidth;
+    x.set(next);
+  });
+
+  const wrapPosition = () => {
+    const track = trackRef.current;
+    if (!track) return;
+    const singleSetWidth = track.scrollWidth / 2;
+    if (singleSetWidth <= 0) return;
+
+    let val = x.get();
+    while (val <= -singleSetWidth) val += singleSetWidth;
+    while (val > 0) val -= singleSetWidth;
+    x.set(val);
+  };
+
   return (
     <section id="tools" className="relative w-full overflow-hidden">
       <div className="mb-10 h-1 w-full bg-secondary "></div>
@@ -40,15 +77,36 @@ export default function Tools() {
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, delay: 0.1 }}
-        className="absolute z-20 right-6 bottom-6 md:bottom-15 flex items-center rounded-lg border border-foreground/10 bg-accent/85 px-5 py-2 backdrop-blur-md opacity-90"
+        className="absolute z-20 right-6 bottom-6 md:bottom-15 flex items-center rounded-lg border border-foreground/10 bg-accent/85 px-5 py-2 opacity-90"
       >
         <span className=" text-md text-foreground">{t("tools.title")}</span>
       </motion.div>
       <div
         className="tools-marquee relative w-full mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
         style={{ direction: "ltr" }}
+        onMouseEnter={() => {
+          isHovering.current = true;
+        }}
+        onMouseLeave={() => {
+          isHovering.current = false;
+        }}
       >
-        <div className="tools-track flex w-max items-center">
+        <motion.div
+          ref={trackRef}
+          className="tools-track flex w-max items-center cursor-grab active:cursor-grabbing"
+          style={{ x }}
+          drag="x"
+          dragConstraints={{ left: -1e6, right: 1e6 }}
+          dragElastic={0.05}
+          dragMomentum={false}
+          onDragStart={() => {
+            isDragging.current = true;
+          }}
+          onDragEnd={() => {
+            isDragging.current = false;
+            wrapPosition();
+          }}
+        >
           {loopTools.map((tool, i) => (
             <div
               key={`${tool.name}-${i}`}
@@ -62,22 +120,9 @@ export default function Tools() {
               </span>
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
       <div className="mt-10 h-1 w-full bg-secondary "></div>
-
-      <style>{`
-        @keyframes toolsScroll {
-          from { transform: translateX(0); }
-          to { transform: translateX(-50%); }
-        }
-        .tools-track {
-          animation: toolsScroll 28s linear infinite;
-        }
-        .tools-marquee:hover .tools-track {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   );
 }

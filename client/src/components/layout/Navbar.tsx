@@ -7,7 +7,7 @@ import ThemeToggle from "./ThemeToggle";
 import LanguageToggle from "./LanguageToggle";
 
 const NAV_LINKS = [
-  { href: "/home", key: "nav.home" },
+  { href: "#home", key: "nav.home" },
   { href: "#projects", key: "nav.projects" },
   { href: "#experiences", key: "nav.experiences" },
   { href: "#contact", key: "nav.contact" },
@@ -16,6 +16,28 @@ const NAV_LINKS = [
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
+
+  const handleMobileNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    setOpen(false);
+
+    // only intercept in-page anchors, let real routes ("/home") behave normally
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        // wait for the mobile menu's collapse animation to release the
+        // scroll container before jumping, so they don't fight each other
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 260); // slightly longer than the 0.25s collapse transition
+        });
+      }
+    }
+  };
 
   return (
     <header className="fixed w-dvw top-0 z-50 border-b md:border-none border-foreground/10 bg-background/80 backdrop-blur-md">
@@ -71,7 +93,7 @@ export default function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => handleMobileNavClick(e, link.href)}
                   className="rounded-lg px-2 py-2 text-sm font-medium text-foreground/70 transition-colors hover:bg-foreground/5 hover:text-foreground"
                 >
                   {t(link.key)}
