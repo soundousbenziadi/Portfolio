@@ -30,7 +30,9 @@
     "backHome": "Back to Home",
     "repoLink": "View Repo",
     "liveLink": "Live Demo",
-    "behanceLink": "View on Behance"
+    "behanceLink": "View on Behance",
+    "showAll": "View all projects",
+    "showLess": "Show less"
   },
   "projectTypes": {
     "fullstack": "Full Stack",

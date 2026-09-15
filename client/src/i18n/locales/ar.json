@@ -30,7 +30,9 @@
     "backHome": "العودة إلى الرئيسية",
     "repoLink": "عرض المستودع",
     "liveLink": "عرض مباشر",
-    "behanceLink": "عرض على بيهانس"
+    "behanceLink": "عرض على بيهانس",
+    "showAll": "عرض جميع المشاريع",
+    "showLess": "عرض أقل"
   },
   "projectTypes": {
     "fullstack": "متكامل",
