@@ -2,7 +2,7 @@ import type { Certificate } from "../types/certificate";
 
 import ESPImage from "../assets/certificates/ESP.png";
 import GUVIImage from "../assets/certificates/GUVI.png";
-import HuggingFaceAgentsImage from "../assets/certificates/HuggingFaceAgents.jpg";
+import HuggingFaceAgentsImage from "../assets/certificates/huggingFaceAgents.jpg";
 import huggingFaceMCPImage from "../assets/certificates/huggingFaceMCP.jpg";
 import companyProgramImage from "../assets/certificates/companyProgram.jpg";
 import bunianLeadershipImage from "../assets/certificates/bunianLeadership.jpg";
