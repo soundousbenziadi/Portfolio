@@ -40,5 +40,13 @@
     "uiux": "UI/UX",
     "automation": "Automation",
     "graphicDesign": "Graphic Design"
+  },
+
+  "certificates": {
+    "title": "Certificates",
+    "subtitle": "Courses and credentials I've completed.",
+    "prev": "Previous certificate",
+    "next": "Next certificate",
+    "close": "Close"
   }
 }

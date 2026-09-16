@@ -9,6 +9,7 @@
   --color-primary: #0c8ec1;
   --color-secondary: #eda909;
   --color-accent: #e65300;
+  --color-section: #f0f4f8;
 
   --font-heading: "Sora", "Readex Pro", sans-serif;
   --font-body: "Inter", "Cairo", sans-serif;
@@ -21,6 +22,7 @@
     --color-primary: #009edb;
     --color-secondary: #feb100;
     --color-accent: #ff6300;
+    --color-section: #0a1c2b;
   }
 
   html {
@@ -46,4 +48,24 @@
   h2 {
     @apply font-heading;
   }
+}
+
+.custom-shape-divider-top-1789584007 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1789584007 svg {
+  position: relative;
+  display: block;
+  width: calc(169% + 1.3px);
+  height: 49px;
+}
+
+.custom-shape-divider-top-1789584007 .shape-fill {
+  fill: var(--color-background);
 }
