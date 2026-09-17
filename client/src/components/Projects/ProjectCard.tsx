@@ -42,12 +42,9 @@ export default function ProjectCard({ project }: { project: Project }) {
             {truncateText(project.description[lang], 110)}
           </p>
 
-          <Link
-            to={`/projects/${project.id}`}
-            className=" mt-2  w-full text-center text-md text-foreground transition-colors bg-primary/90 hover:bg-primary/80   rounded-2xl border border-foreground/10 py-1 "
-          >
+          <div className=" mt-2  w-full text-center text-md text-foreground transition-colors bg-primary/90 hover:bg-primary/80   rounded-2xl border border-foreground/10 py-1 ">
             {t("projects.viewMore")}
-          </Link>
+          </div>
         </div>
       </motion.div>
     </Link>

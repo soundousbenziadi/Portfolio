@@ -4,12 +4,10 @@
 @theme {
   --color-background: #f7fafc;
   --color-foreground: #071a2b;
-  /* --color-primary: #0078a8; */
-  /* --color-secondary: #d99000;*/
   --color-primary: #0c8ec1;
   --color-secondary: #eda909;
   --color-accent: #e65300;
-  --color-section: #f0f4f8;
+  --color-section: #071a2b0d;
 
   --font-heading: "Sora", "Readex Pro", sans-serif;
   --font-body: "Inter", "Cairo", sans-serif;

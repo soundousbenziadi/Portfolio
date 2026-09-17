@@ -31,7 +31,7 @@
     "repoLink": "View Repo",
     "liveLink": "Live Demo",
     "behanceLink": "View on Behance",
-    "showAll": "View all projects",
+    "showAll": "View more projects",
     "showLess": "Show less"
   },
   "projectTypes": {
@@ -48,5 +48,23 @@
     "prev": "Previous certificate",
     "next": "Next certificate",
     "close": "Close"
+  },
+
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind? Let’s build something meaningful.",
+    "description": "I’m always interested in creating thoughtful digital experiences and turning ideas into functional, engaging products. If you have something you’d like to build, feel free to reach out.",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "successMessage": "Your message has been sent successfully. I'll get back to you soon",
+      "errorMessage": "Something went wrong. Please try again or email me directly."
+    }
   }
 }

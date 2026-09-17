@@ -86,9 +86,9 @@ export default function Certificates() {
   return (
     <section
       id="certificates"
-      className="w-full  md:px-6 py-10 md:py-20 bg-section"
+      className="relative w-full  md:px-6 py-10 md:py-20 bg-section"
     >
-      {/* <div className="custom-shape-divider-top-1789584007">
+      <div className="custom-shape-divider-top-1789584007">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ export default function Certificates() {
             className="shape-fill"
           ></path>
         </svg>
-      </div> */}
+      </div>
       <motion.div className="mx-auto mb-14 flex max-w-2xl flex-col items-center gap-3 text-center">
         <h2 className=" text-2xl font-semibold sm:text-3xl md:text-4xl">
           {t("certificates.title")}
@@ -155,7 +155,10 @@ export default function Certificates() {
           </div>
         </div>
 
-        <div className="mt-8 flex items-center justify-center gap-4">
+        <div
+          className="mt-8 flex items-center justify-center gap-4"
+          style={{ direction: "ltr" }}
+        >
           <motion.button
             type="button"
             onClick={prev}
@@ -163,7 +166,6 @@ export default function Certificates() {
             whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.92 }}
             className="hidden sm:flex h-10 w-10 items-center justify-center rounded-full border border-foreground/15 bg-background/80 text-foreground/80 shadow-md backdrop-blur-md transition-colors hover:bg-foreground/5"
-            style={{ direction: "ltr" }}
           >
             <ChevronLeft className="h-5 w-5" />
           </motion.button>
@@ -191,7 +193,6 @@ export default function Certificates() {
             whileHover={{ scale: 1.06 }}
             whileTap={{ scale: 0.92 }}
             className="hidden sm:flex h-10 w-10 items-center justify-center rounded-full border border-foreground/15 bg-background/80 text-foreground/80 shadow-md backdrop-blur-md transition-colors hover:bg-foreground/5"
-            style={{ direction: "ltr" }}
           >
             <ChevronRight className="h-5 w-5" />
           </motion.button>
