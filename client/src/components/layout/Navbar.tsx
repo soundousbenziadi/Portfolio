@@ -9,7 +9,7 @@ import LanguageToggle from "./LanguageToggle";
 const NAV_LINKS = [
   { href: "#home", key: "nav.home" },
   { href: "#projects", key: "nav.projects" },
-  { href: "#experiences", key: "nav.experiences" },
+  { href: "#certificates", key: "nav.certificates" },
   { href: "#contact", key: "nav.contact" },
 ];
 

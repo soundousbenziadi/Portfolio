@@ -1,5 +1,5 @@
-import { SiGithub, SiLinkerd, SiBehance } from "react-icons/si";
-import { Mail } from "lucide-react";
+import { SiGithub, SiBehance } from "react-icons/si";
+import { Mail, Link } from "lucide-react";
 import type { IconType } from "react-icons";
 import type { ComponentType } from "react";
 
@@ -20,7 +20,7 @@ export const socialLinks: SocialLink[] = [
   {
     id: "linkedin",
     name: "LinkedIn",
-    Icon: SiLinkerd,
+    Icon: Link,
     url: "https://www.linkedin.com/in/soundous-benziadi-73339b284/",
   },
   {

@@ -97,14 +97,15 @@ export default function Hero() {
           >
             {t("hero.articlesButton")}
           </motion.button>
-          <motion.button
+          <motion.a
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             transition={{ type: "spring", stiffness: 400, damping: 20 }}
             className="bg-secondary px-8 py-2 text-[#f4f7fa] hover:bg-secondary/90 cursor-pointer focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 inline-flex items-center justify-center rounded-br-md rounded-tl-md text-md font-bold transition-colors focus-visible:outline-none "
+            href="#contact"
           >
             {t("hero.contactButton")}
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>
