@@ -5,7 +5,7 @@ import GUVIImage from "../assets/certificates/GUVI.png";
 import HuggingFaceAgentsImage from "../assets/certificates/huggingFaceAgents.jpg";
 import huggingFaceMCPImage from "../assets/certificates/huggingFaceMCP.jpg";
 import companyProgramImage from "../assets/certificates/companyProgram.jpg";
-import bunianLeadershipImage from "../assets/certificates/bunianLeadership.jpg";
+import bunianLeadershipImage from "../assets/certificates/bunianLeadership.png";
 import IctOverviewOfAiImage from "../assets/certificates/IctOverviewOfAi.png";
 import courseraBackendImage from "../assets/certificates/courseraBackend.jpg";
 

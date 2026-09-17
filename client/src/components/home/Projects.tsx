@@ -50,7 +50,7 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 24 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
-                viewport={{ once: true, amount: 0.2 }}
+                viewport={{ once: true }}
                 transition={{ duration: 0.6, ease: EASE, delay: index * 0.08 }}
               >
                 <ProjectCard project={project} />
