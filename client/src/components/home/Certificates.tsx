@@ -132,7 +132,7 @@ export default function Certificates() {
                 return (
                   <motion.div
                     key={certificate.id}
-                    className="absolute left-1/2 top-1/2 h-full w-[50%] sm:w-[36%] md:w-[32%]"
+                    className="absolute left-1/2 top-1/2 h-full w-[60%] sm:w-[36%] md:w-[32%]"
                     style={{ zIndex }}
                     initial={false}
                     animate={{
