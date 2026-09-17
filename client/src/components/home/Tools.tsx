@@ -94,8 +94,7 @@ export default function Tools() {
       >
         <motion.div
           initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.2 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           ref={trackRef}
           className="tools-track flex w-max items-center cursor-grab active:cursor-grabbing"
