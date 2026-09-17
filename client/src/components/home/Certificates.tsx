@@ -101,14 +101,26 @@ export default function Certificates() {
           ></path>
         </svg>
       </div>
-      <motion.div className="mx-auto mb-14 flex max-w-2xl flex-col items-center gap-3 text-center">
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="mx-auto mb-14 flex max-w-2xl flex-col items-center gap-3 text-center"
+      >
         <h2 className=" text-2xl font-semibold sm:text-3xl md:text-4xl">
           {t("certificates.title")}
         </h2>
         <p className="text-foreground/70">{t("certificates.subtitle")}</p>
       </motion.div>
 
-      <div className="w-full flex flex-col items-center justify-center">
+      <motion.div
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="w-full flex flex-col items-center justify-center"
+      >
         <div className="w-full flex flex-col items-center justify-center">
           <div
             className="relative w-full  h-60 sm:h-80 md:h-90 overflow-hidden"
@@ -197,7 +209,7 @@ export default function Certificates() {
             <ChevronRight className="h-5 w-5" />
           </motion.button>
         </div>
-      </div>
+      </motion.div>
 
       <CertificateLightbox
         certificate={openCertificate}

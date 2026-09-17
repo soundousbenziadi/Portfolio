@@ -75,8 +75,9 @@ export default function Tools() {
       <div className="mb-10 h-1 w-full bg-secondary "></div>
       <motion.div
         initial={{ opacity: 0, y: 24 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, delay: 0.1 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
         className="absolute z-20 right-6 bottom-6 md:bottom-15 flex items-center rounded-sm border border-foreground/10 bg-accent/80 px-5 py-2 opacity-90"
       >
         <span className=" text-md text-foreground">{t("tools.title")}</span>
@@ -92,6 +93,10 @@ export default function Tools() {
         }}
       >
         <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           ref={trackRef}
           className="tools-track flex w-max items-center cursor-grab active:cursor-grabbing"
           style={{ x }}

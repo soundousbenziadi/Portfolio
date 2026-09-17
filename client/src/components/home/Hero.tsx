@@ -48,32 +48,36 @@ export default function Hero() {
       <div className="z-10 flex flex-col items-center justify-center gap-8 md:gap-6 text-center px-4">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: EASE, delay: 0.1 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="font-heading text-xl font-semibold sm:text-3xl md:text-4xl lg:text-5xl"
         >
           {t("hero.greeting")}
         </motion.h2>
         <motion.h1
           initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: EASE, delay: 0.22 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="font-heading text-4xl font-bold text-primary sm:text-5xl md:text-6xl lg:text-7xl"
         >
           {t("hero.name")}
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: EASE, delay: 0.34 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="max-w-2xl text-lg sm:text-xl md:text-2xl lg:text-3xl"
         >
           {t("hero.description")}
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: EASE, delay: 0.46 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="flex items-center text-lg sm:text-xl md:text-2xl text-foreground/70"
         >
           <MapPin className="h-5 w-5 mx-2 shrink-0" />
@@ -82,8 +86,9 @@ export default function Hero() {
 
         <motion.div
           initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: EASE, delay: 0.46 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           className="flex flex-col gap-8 sm:flex-row"
         >
           <motion.button
