@@ -66,5 +66,8 @@
       "successMessage": "Your message has been sent successfully. I'll get back to you soon",
       "errorMessage": "Something went wrong. Please try again or email me directly."
     }
+  },
+  "footer": {
+    "copyright": "Soundous, All rights reserved."
   }
 }

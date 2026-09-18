@@ -3,6 +3,7 @@ import Tools from "../components/home/Tools";
 import Projects from "../components/home/Projects";
 import Certificates from "../components/home/Certificates";
 import Contact from "../components/home/Contact";
+import Footer from "../components/home/Footer";
 export default function Home() {
   return (
     <>
@@ -11,6 +12,7 @@ export default function Home() {
       <Projects />
       <Certificates />
       <Contact />
+      <Footer />
     </>
   );
 }
