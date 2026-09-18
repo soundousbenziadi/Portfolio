@@ -50,7 +50,7 @@ export const projectsMock: Project[] = [
       "n8n",
     ],
     links: {
-      live: "YOUR_DEMO_VIDEO_URL",
+      live: "https://drive.google.com/drive/folders/1B7cvujzfPlq8LA103MRaXUujrny9hGEP?usp=sharing",
     },
   },
   {
